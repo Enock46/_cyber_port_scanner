@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Port Scanner</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
    
 </head>
 <body>
@@ -36,90 +38,3 @@
 </body>
 </html>
 
-<style>
-    body {
-        font-family: 'Courier New', monospace;
-        background-color: #121212;
-        color: #e0e0e0;
-        margin: 0;
-        padding: 20px;
-    }
-    h1 {
-        font-size: 2rem;
-        color: #00ff00;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-    .container {
-        max-width: 600px;
-        margin: 0 auto;
-        background-color: #1c1c1c;
-        padding: 30px;
-        border-radius: 8px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    }
-    form {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 30px;
-    }
-    label {
-        font-size: 1rem;
-        margin-bottom: 10px;
-    }
-    input[type="text"], input[type="number"] {
-        padding: 15px;
-        font-size: 1.1rem;
-        margin-bottom: 20px;
-        border-radius: 6px;
-        border: 1px solid #333;
-        background-color: #2a2a2a;
-        color: #e0e0e0;
-        outline: none;
-    }
-    input[type="text"]:focus, input[type="number"]:focus {
-        border-color: #00ff00;
-    }
-    button {
-        padding: 15px;
-        font-size: 1.1rem;
-        border: none;
-        border-radius: 6px;
-        background-color: #00ff00;
-        color: #121212;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-    button:hover {
-        background-color: #008f00;
-    }
-    .result {
-        background-color: #2a2a2a;
-        border-radius: 6px;
-        padding: 20px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    }
-    .result h2 {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-        color: #00ff00;
-    }
-    .result p {
-        font-size: 1.2rem;
-        margin: 10px 0;
-        color: #e0e0e0;
-    }
-    .footer {
-        margin-top: 40px;
-        font-size: 0.9rem;
-        text-align: center;
-        color: #777;
-    }
-    .footer a {
-        color: #00ff00;
-        text-decoration: none;
-    }
-    .footer a:hover {
-        text-decoration: underline;
-    }
-</style>

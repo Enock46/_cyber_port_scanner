@@ -54,7 +54,8 @@ def index():
             # If port is not provided, scan a range of ports (e.g., 1-1065535)
             if not port:
                 start_port = 1
-                end_port = 65535
+                end_port = 1000 
+                # 65535
                 results = port_scanner(target_ip, start_port, end_port)
                 return render_template("index.html", result=results, target_ip=target_ip, port=None)
             else:
